@@ -1,7 +1,25 @@
 <html>
 <head>
 <style>
-
+   body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        background: lightpink;
+    }
+    h1 {
+        color: black;
+    }
+    h5 {
+        color: black;
+        background-color: lightyellow;
+    }
+    input[type="submit"]
+   {
+    background-color: lightseagreen;
+    color: black;
+    margin: 4px;
+   }
    
 
    
@@ -11,7 +29,7 @@
 <!--##NO predefine-->
 <body>
     <h1>Advance Calculator!</h1>  <br>
-    <img width="20%" height="20%" src="{{url_for('static', filename='img.png') }} " />
+    <img width="20%" height="20%" src="{{url_for('static', filename='img.png') }} "/><br><br>
     <form method="POST">
         <label >Enter expression</label><br><br>
         <select class="is-focused is-large" name="operation" aria-label="operationDropdown">
@@ -24,6 +42,9 @@
 </form>
 
 
-    <p>Your equation is {{equation}} = {{ result }}</p>
+    <p>Your equation is {{equation}} = {{ result }}</p><br><br><br>
+    <footer>
+        <h5>Created by -Parvathi Jayapal</h5>
+    </footer>
 </body>
 </html>
